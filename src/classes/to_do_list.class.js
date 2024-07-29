@@ -36,6 +36,5 @@ export class To_do_list{
         :
             [];
         this.list=this.list.map(obj=>To_do.fromJson(obj));
-        this.list[0].imprimir_clase();
     }
 }

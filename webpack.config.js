@@ -6,9 +6,9 @@ const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
-    optimization: {
-        minimizer: [ new OptimizeCssAssetsPlugin() ]
-    },
+    // optimization: {
+    //     minimizer: [ new OptimizeCssAssetsPlugin() ]
+    // },
     module: {
         rules: [
             {

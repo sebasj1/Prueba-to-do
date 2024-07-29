@@ -47,7 +47,6 @@ todo_lista_html.addEventListener("click",(event)=>{
         to_do_list.eliminar_to_do(to_do_id);
         todo_lista_html.removeChild(to_do_indicado);
     }
-    console.log(to_do_list);
 })
 
 btn_completados.addEventListener("click",()=>{
