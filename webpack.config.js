@@ -32,7 +32,7 @@ module.exports = {
                 options: {
                     minimize: false
                 },
-            }/*,
+            },
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
@@ -42,21 +42,22 @@ module.exports = {
                             esModule: false,
                             name: 'assets/[name].[ext]'
                         }
+                    }
                    
                 ]
-            } }*/
+            } 
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({
+        new HtmlWebPackPlugin({//lo copia en la carpeta de distribucions
             template: './src/index.html',
             filename: './index.html'
         }),
-        new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({//lo copia en la carpeta de distribucion
             filename: '[name].css',
             ignoreOrder: false
         }),
-        // new CopyPlugin([
+        // new CopyPlugin([//lo copia en la carpeta de distribucion
         //     { from: 'src/assets', to: 'assets/' },
         // ]),
     ]
